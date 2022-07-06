@@ -5,16 +5,33 @@
 ___
 <!-- omit in toc -->
 ### Table of Contents
-1. [Problem Identified](#problem-identified)
-2. [Purpose](#purpose)
-3. [Target Audience](#target-audience)
-4. [User Stories](#user-stories)
-5. [Features](#features)
-6. [Tech Stack](#tech-stack)
-7. [Dataflow Diagram](#dataflow-diagram)
-8. [Application Architecture Diagram](#application-architecture-diagram)
-9. [Wireframes](#wireframes)
-10. [Trello Board Progress](#trello-board-progress)
+- [**Wire frames**](#wire-frames)
+    - [**Homepage Design:**](#homepage-design)
+      - [Homepage Phone View](#homepage-phone-view)
+      - [Homepage Tablet View](#homepage-tablet-view)
+      - [Homepage Desktop View](#homepage-desktop-view)
+    - [**Held Listings Page Design:**](#held-listings-page-design)
+      - [Held Listings Phone View](#held-listings-phone-view)
+      - [Held Listings Tablet View](#held-listings-tablet-view)
+      - [Held Listings Desktop View](#held-listings-desktop-view)
+    - [**Admin Dashboard Page Design:**](#admin-dashboard-page-design)
+      - [Admin Dashboard Phone View](#admin-dashboard-phone-view)
+      - [Admin Dashboard Tablet View](#admin-dashboard-tablet-view)
+      - [Admin Dashboard Desktop View](#admin-dashboard-desktop-view)
+    - [**Modal Designs**](#modal-designs)
+      - [Add Staff Modal](#add-staff-modal)
+      - [Change Password Modal](#change-password-modal)
+      - [Delete Account Modal](#delete-account-modal)
+      - [Manage Account Modal](#manage-account-modal)
+      - [Manage Listing Modal](#manage-listing-modal)
+      - [Sign In Modal](#sign-in-modal)
+      - [Sign Up Modal](#sign-up-modal)
+    - [**Menus Design:**](#menus-design)
+      - [Hamburger Menu](#hamburger-menu)
+      - [Settings Menu](#settings-menu)
+      - [Shopping Cart Menu](#shopping-cart-menu)
+  - [Trello Board Progress](#trello-board-progress)
+  - [References](#references)
 
 ### Problem Identified
 
@@ -102,12 +119,272 @@ As a staff member, I want to be able to chat to shoppers who are requesting to f
 
 ### Application Architecture Diagram
 
+## **Wire frames**
+
+#### **Homepage Design:**
+
+<details open>
+<summary> General Design Choices </summary>
+<br>
+
+This section contains a list of wire frames for all screen widths. Each designed to be mobile first with the intention of the site being accessible to all users. For this reason the design of the website is kept simple and monochromatic to draw attention to button warnings and intended actions across the user interface. 
+
+To keep the website design modern we have decided to use Oswald with varying weights to put emphasis on important content such as headings. Oswald belongs to the Sans-Serif typeface family which is shown to significantly improve the reading performance of individuals with dyslexia. (Luz Rello and Ricardo Baeza-Yates, Good Fonts for Dyslexia, 21 October 2013) This was another important factor in our decision to use Oswald. 
 
 
-### Wireframes
+The colors chosen for the website  (excluding white and black) are red, blue and yellow or specifically #B30000, #2555AD and #FAC904 respectively. These colors have been contrast checked using web-aims online contrast checker (see webAIM Screenshots below).
+
+A deeper discussion that outlines design choices such as but not limited to space distribution, relationship between screens (i.e. phone, tablet and desktop designs) content prioritization and intended actions/functions can be found below.
+
+<details open>
+<summary> WebAIM Screenshots </summary>
+<br>
 
 
+![blue](./assets/Blue-Webaim.png)
+![red](./assets/Red-Webaim.png)
+![yellow](./assets/yellow-Webaim.png)
+
+
+</details>
+
+</details>
+
+<details open>
+<summary> Homepage Wireframes </summary>
+<br>
+
+##### Homepage Phone View
+![Homepage Phone](./assets/Homepage-Phone.png)
+##### Homepage Tablet View
+![Homepage Tablet](./assets/Homepage-Tablet.png)
+##### Homepage Desktop View
+![Homepage Desktop](./assets/Homepage-Desktop.png)
+
+</details>
+
+
+<details open>
+<summary> Homepage Design overview </summary>
+<br>
+The homepage is the first thing that the user sees when they enter the website. To emphasize the websites purpose and build reputation we have decided to implement a hero section that contains our mission statement and logo as well as an image with a dark overlay to increase contrast and draw attention to our brand's slogan.
+
+We recognize that the navbar is the anchor point for the website and for this reason it is fixed at the top of the screen for all users so that they can quickly and easily navigate the website. In addition to this you will notice that each nav icon is clearly labelled underneath to communicate the destination point (see intended actions/functions). You will notice that we have chosen to incorporate svg icons with the goal of making the navbar more visually appealing to the stakeholders. Lastly you will notice on small device widths all nav-items except for the cart will be displayed in a hamburger menu.
+
+Nav-Item Actions/Functions (left to right):
+ - Desperate Housewares logo; will return the user to the top of the homepage.
+ - Bag nav item; will render the Held Listings page.
+ - Settings dropdown menu; will open the settings menu.
+ - Account nav item: will open the manage account modal.
+ - create listing nav item: will open the create listing modal.
+ - Cart nave item: will open the shopping cart menu
+
+
+We recognize that the most common way that users scan our website will follow the F-shaped pattern. For this reason we have decided to go with a standard design for the marketplace catalogue directing their eyes across a series of catalogue item cards. Each cards visual hierarchy is designed to establish the main focal point as the catalogue items image. The secondary focal point is the large "add to cart" button.
+
+Additional design considerations that improve the user experience and build upon the sites functionality is:
+1.  The "sort by" button, whose purpose is for the user to be able to sort by "price" and "recent" with the goal of adding more sorting options during future development cycles. 
+2.  The manage-listing button, which will prompt the manage-listing-modal (discussed further on) and is displayed instead of the add to cart button for staff and administrators so that they can manage (edit, remove) a listing item on the catalogue.
+3.  The pagination button, which is designed to improve the user experience and the load time of the website by reducing the amount of listing items required to be displayed at any given time and improve the user's the ability to navigate them. 
+
+</details>
+
+#### **Held Listings Page Design:**
+
+<details open>
+<summary>Held Listings Page Wire-frames</summary>
+<br>
+
+##### Held Listings Phone View
+![Held Listings Phone](./assets/Held-Listings-Phone.png)
+##### Held Listings Tablet View
+![Held Listing Tablet](./assets/Held-Listings-Tablet.png)
+##### Held Listings Desktop View
+![Held Listing Desktop](./assets/Held-Listings-Desktop.png)
+
+</details>
+
+<details open>
+<summary>Held Listings Page Design overview</summary>
+<br>
+
+The held listings page is reused for both staff and shoppers and will be rendered in different ways. The differences between what are rendered includes:
+
+1. The shoppers data will be visible for a logged in shopper. (see held listing desktop wire0frame vs tablet wire-frame)
+2. The shoppers data will not be visible for a logged in staff member.
+3. For shoppers only held items they have placed a hold on will be shown as cards in the held items card collection.
+4. For staff, all held items in the store will be shown as cards in the held items card collection. 
+5. The mark as collected button on a held item card will not be visible for shoppers and the card size will be reduced.
+6. The mark as collected button will be visible for staff.
+
+The held listings page can be accessed through the bag button for shoppers or through the settings menu option "view listings on hold" for staff. The purpose of this page is for users to be able to view the holdings relevant to them. You will notice that the design is kept simple and minimal and follows the standard "F" viewing pattern. For accessability the mark as collected button is designed to be large on each card so that the staff member can quickly process a customers hold request. 
+
+Initially the design included a table that documented the holdings in a similar format however to make the website more responsive and reduce load times the held items were turned into cards with a pagination button for easy navigation. 
+
+</details>
+
+#### **Admin Dashboard Page Design:**
+
+<details open>
+<summary>Admin Dashboard Page Wire-frames</summary>
+<br>
+
+##### Admin Dashboard Phone View
+![Admin Dashboard Phone](./assets/Admin-Dashboard-Phone.png)
+##### Admin Dashboard Tablet View
+![Admin Dashboard Tablet](./assets/Admin-Dashboard-Tablet.png)
+##### Admin Dashboard Desktop View
+![Admin Dashboard Desktop](./assets/Admin-Dashboard-Desktop.png)
+
+</details>
+
+<details open>
+<summary>Admin Dashboard Page Design Overview</summary>
+<br>
+
+The Admin Dashboard page is used by an administer to add new staff to the store using the + add staff button or remove staff from the store by clicking the remove icon on the staff card in the staff card collection. This page is designed with simplicity in mind so that in future development cycles more administrative features can be added. For consistency with all other pages this page follows the standard F pattern. You will notice the remove staff icon and button is coloured red. This is to call attention to this feature and act as a warning to the user. 
+ 
+</details>
+
+#### **Modal Designs**
+
+<details open>
+<summary>Modal Wireframes</summary>
+<br>
+
+<details open>
+<summary>Add Staff Modal Wire-frames</summary>
+<br>
+
+##### Add Staff Modal
+![Add Staff Modal](./assets/Add-Staff-Modal.png)
+
+</details>
+
+<details open>
+<summary>Change Password Modal Wireframes</summary>
+<br>
+
+##### Change Password Modal
+![Change Password Modal](./assets/Change-Password-Modal.png)
+
+</details>
+
+<details open>
+<summary>Delete Account Modal Wireframes</summary>
+<br>
+
+##### Delete Account Modal
+![Delete Account Modal](./assets/Delete-Account-Modal.png)
+
+</details>
+
+<details open>
+<summary>Manage Account Modal Wireframes</summary>
+<br>
+
+##### Manage Account Modal
+![Manage Account Modal](./assets/Manage-Account-Modal.png)
+
+</details>
+
+<details open>
+<summary>Manage Listing Modal Wireframes</summary>
+<br>
+
+##### Manage Listing Modal
+![Manage Listing Modal](./assets/Manage-Listing-Modal.png)
+
+</details>
+
+<details open>
+<summary>Sign In Modal Wireframes</summary>
+<br>
+
+##### Sign In Modal
+![Sign In Modal](./assets/Sign-In-Modal.png)
+
+</details>
+
+<details open>
+<summary>Sign Up Modal Wireframes</summary>
+<br>
+
+##### Sign Up Modal
+![Sign Up Modal](./assets/Sign-Up-Modal.png)
+
+</details>
+
+</details>
+
+<details open>
+<summary>Modals Design Overview</summary>
+<br>
+
+To stop the website from being content heavy we have decided to split the forms out into modals. All modals follow the general F patter with large buttons to draw attention to the corresponding actions. Each modal can be closed using the close button with the 'X' icon which is clearly labelled close to indicate it's purpose to the user. Additionally every modal follows the general format listed below with a goal fo providing consistency between modals and simplicity.
+
+1. Header,
+2. Fillable Form,
+3. Submit/save buttons.
+
+The design of these modals makes responsiveness easy to optimize for mobile screens. Lastly you will notice that all buttons are styled to emphasize warnings and draw attention to their intended function.
+
+</details>
+
+#### **Menus Design:**
+
+<details open>
+<summary>Menu Wireframes</summary>
+<br>
+
+<details open>
+<summary>Hamburger Menu Wireframes</summary>
+<br>
+
+##### Hamburger Menu
+![Hamburger Menu](./assets/Hamburger-Menu.png)
+
+</details>
+
+<details open>
+<summary>Settings Menu Wireframes</summary>
+<br>
+
+##### Settings Menu
+![Settings Menu](./assets/Settings-Menu.png)
+
+</details>
+
+<details open>
+<summary>Shopping Cart Menu Wireframes</summary>
+<br>
+
+##### Shopping Cart Menu
+![Shopping Cart Menu](./assets/Shopping-Cart-Menu.png)
+
+</details>
+
+</details>
+
+<details open>
+<summary>Menu's Design Overview</summary>
+<br>
+
+To meet the criteria of our MVP the design incorporates three menu, these are discussed below. 
+
+**Hamburger Menu:** This menu was designed with simplicity and mobile responsiveness in mind by reducing the complexity of the navbar for mobile widths. Additionally, the position of the hamburger button used to open this menu is located on the left hand side and corresponds with the direction that the hamburger menu will be appear from.
+
+**Settings Menu:** This menu has a similar design to the hamburger menu and is designed with simplicity and mobile responsiveness in mind. The intention of this menu is to act as a place for staff/admin navigation options to be found. On large screen widths this menu will drop down when the settings icon is clicked and for small screen widths it will push outwards like the hamburger menu.
+
+**Shopping Cart Menu:** This menu is designed with simplicity and user experience in mind. The cart is designed to be mobile responsive and appear when the cart icon is clicked. The cart will pop out from the right hand side of the screen for desktop and over the entire screen for mobile widths. On this menu you will notice that the "place hold" button is featured twice. The intention of this is to reduce the users scroll times on small screens. In addition to this you will notice that the remove all button is highlighted red and made distinct to draw attention and act as a warning.
+
+</details>
 
 ### Trello Board Progress
+
+
+### References
+
+1. Luz Rello and Ricardo Baeza-Yates, Good Fonts for Dyslexia (21 October 2013), http://dyslexiahelp.umich.edu/sites/default/files/good_fonts_for_dyslexia_study.pdf
 
 
