@@ -5,16 +5,16 @@
 ___
 <!-- omit in toc -->
 ### Table of Contents
-1. [Problem Identified](#problem-identified)
-2. [Purpose](#purpose)
-3. [Target Audience](#target-audience)
-4. [User Stories](#user-stories)
-5. [Features](#features)
-6. [Tech Stack](#tech-stack)
-7. [Dataflow Diagram](#dataflow-diagram)
-8. [Application Architecture Diagram](#application-architecture-diagram)
-9. [Wireframes](#wireframes)
-10. [Trello Board Progress](#trello-board-progress)
+- [Problem Identified](#problem-identified)
+- [Purpose](#purpose)
+- [Target Audience](#target-audience)
+- [User Stories](#user-stories)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Dataflow Diagram](#dataflow-diagram)
+- [Application Architecture Diagram](#application-architecture-diagram)
+- [Wireframes](#wireframes)
+- [Trello Board Progress](#trello-board-progress)
 
 ### Problem Identified
 
@@ -100,7 +100,27 @@ As a staff member, I want to be able to chat to shoppers who are requesting to f
 
 
 ### Dataflow Diagram
+The dataflow diagrams (DFD) reflects the movement of data throughout the program.Rather than have one large diagram, they have been split into multiple DFDs to make understanding them easier.
 
+They have been broken down to specific processes:
+- Customer/User
+- Staff
+- Manager/Admin
+- Login/Sign Up
+- Cart
+
+
+The customer/user DFD follows the processes required for the basic usage of the app; Viewing the items, adding the items to their cart, and placing the items on hold. In order for a customer to add an item to their cart they are required to be logged in.
+
+The cart DFD shows the processes involved in either placing an item on hold or removing all items from the cart. Once the items are placed on hold they are removed from the catalogue so they aren't visible to other customers, the items are moved into their orders, and the cart is then cleared. If the user wishes to clear their cart with placing on hold then the cart is simply cleared of all items.
+
+The login/sign up DFD follows the process required for logging in with JWT and Bcrypt. Each step requires some form of verification (all required inputs are provided, if the user exists, etc.). Once the user is verify or the new user is signed up, the user info is stored as a session cookie and provided a token specific to the user and session which can then be accessed for the duration of the session.
+
+The staff DFD reflects the process of adding, editing, and deleting an item. Only staff, managers, and admins have access to these features.
+
+The manager/admin DFD shows that they are the only ones with access to the admin dashboard. The admin dashboard is the only place where the role of an account can be edited (i.e. add or remove staff). They also have access to all features available to staff.
+
+![DFD](./assets/DFD%20-%20T3A2.png)
 
 
 ### Application Architecture Diagram
