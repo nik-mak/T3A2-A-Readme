@@ -1,37 +1,44 @@
-<!-- omit in toc -->
 # T3A2-A Full-Stack App (Part A)
-<!-- omit in toc -->
 ## Desperate Housewares App
-___
-<!-- omit in toc -->
 ### Table of Contents
-- [**Wire frames**](#wire-frames)
-    - [**Homepage Design:**](#homepage-design)
-      - [Homepage Phone View](#homepage-phone-view)
-      - [Homepage Tablet View](#homepage-tablet-view)
-      - [Homepage Desktop View](#homepage-desktop-view)
-    - [**Held Listings Page Design:**](#held-listings-page-design)
-      - [Held Listings Phone View](#held-listings-phone-view)
-      - [Held Listings Tablet View](#held-listings-tablet-view)
-      - [Held Listings Desktop View](#held-listings-desktop-view)
-    - [**Admin Dashboard Page Design:**](#admin-dashboard-page-design)
-      - [Admin Dashboard Phone View](#admin-dashboard-phone-view)
-      - [Admin Dashboard Tablet View](#admin-dashboard-tablet-view)
-      - [Admin Dashboard Desktop View](#admin-dashboard-desktop-view)
-    - [**Modal Designs**](#modal-designs)
-      - [Add Staff Modal](#add-staff-modal)
-      - [Change Password Modal](#change-password-modal)
-      - [Delete Account Modal](#delete-account-modal)
-      - [Manage Account Modal](#manage-account-modal)
-      - [Manage Listing Modal](#manage-listing-modal)
-      - [Sign In Modal](#sign-in-modal)
-      - [Sign Up Modal](#sign-up-modal)
-    - [**Menus Design:**](#menus-design)
-      - [Hamburger Menu](#hamburger-menu)
-      - [Settings Menu](#settings-menu)
-      - [Shopping Cart Menu](#shopping-cart-menu)
-  - [Trello Board Progress](#trello-board-progress)
-  - [References](#references)
+- [T3A2-A Full-Stack App (Part A)](#t3a2-a-full-stack-app-part-a)
+  - [Desperate Housewares App](#desperate-housewares-app)
+    - [Table of Contents](#table-of-contents)
+    - [Problem Identified](#problem-identified)
+    - [Purpose](#purpose)
+    - [Target Audience](#target-audience)
+    - [User Stories](#user-stories)
+    - [Features](#features)
+    - [Tech Stack](#tech-stack)
+    - [Dataflow Diagram](#dataflow-diagram)
+    - [Application Architecture Diagram](#application-architecture-diagram)
+    - [**Wire frames**](#wire-frames)
+      - [**Homepage Design:**](#homepage-design)
+        - [Homepage Phone View](#homepage-phone-view)
+        - [Homepage Tablet View](#homepage-tablet-view)
+        - [Homepage Desktop View](#homepage-desktop-view)
+      - [**Held Listings Page Design:**](#held-listings-page-design)
+        - [Held Listings Phone View](#held-listings-phone-view)
+        - [Held Listings Tablet View](#held-listings-tablet-view)
+        - [Held Listings Desktop View](#held-listings-desktop-view)
+      - [**Admin Dashboard Page Design:**](#admin-dashboard-page-design)
+        - [Admin Dashboard Phone View](#admin-dashboard-phone-view)
+        - [Admin Dashboard Tablet View](#admin-dashboard-tablet-view)
+        - [Admin Dashboard Desktop View](#admin-dashboard-desktop-view)
+      - [**Modal Designs**](#modal-designs)
+        - [Add Staff Modal](#add-staff-modal)
+        - [Change Password Modal](#change-password-modal)
+        - [Delete Account Modal](#delete-account-modal)
+        - [Manage Account Modal](#manage-account-modal)
+        - [Manage Listing Modal](#manage-listing-modal)
+        - [Sign In Modal](#sign-in-modal)
+        - [Sign Up Modal](#sign-up-modal)
+      - [**Menus Design:**](#menus-design)
+        - [Hamburger Menu](#hamburger-menu)
+        - [Settings Menu](#settings-menu)
+        - [Shopping Cart Menu](#shopping-cart-menu)
+    - [Trello Board Progress](#trello-board-progress)
+    - [References](#references)
 
 ### Problem Identified
 
@@ -161,12 +168,32 @@ is a javascript testing framework that will be implemented for our unit testing.
 Git is an open source version control system that will be used to handle version control.
 
 ### Dataflow Diagram
+The dataflow diagrams (DFD) reflects the movement of data throughout the program.Rather than have one large diagram, they have been split into multiple DFDs to make understanding them easier.
 
+They have been broken down to specific processes:
+- Customer/User
+- Staff
+- Manager/Admin
+- Login/Sign Up
+- Cart
+
+
+The customer/user DFD follows the processes required for the basic usage of the app; Viewing the items, adding the items to their cart, and placing the items on hold. In order for a customer to add an item to their cart they are required to be logged in.
+
+The cart DFD shows the processes involved in either placing an item on hold or removing all items from the cart. Once the items are placed on hold they are removed from the catalogue so they aren't visible to other customers, the items are moved into their orders, and the cart is then cleared. If the user wishes to clear their cart with placing on hold then the cart is simply cleared of all items.
+
+The login/sign up DFD follows the process required for logging in with JWT and Bcrypt. Each step requires some form of verification (all required inputs are provided, if the user exists, etc.). Once the user is verify or the new user is signed up, the user info is stored as a session cookie and provided a token specific to the user and session which can then be accessed for the duration of the session.
+
+The staff DFD reflects the process of adding, editing, and deleting an item. Only staff, managers, and admins have access to these features.
+
+The manager/admin DFD shows that they are the only ones with access to the admin dashboard. The admin dashboard is the only place where the role of an account can be edited (i.e. add or remove staff). They also have access to all features available to staff.
+
+![DFD](./assets/DFD%20-%20T3A2.png)
 
 
 ### Application Architecture Diagram
 
-## **Wire frames**
+### **Wire frames**
 
 <details open>
 <summary> General Design Choices </summary>
