@@ -2,8 +2,8 @@
 # T3A2-A Full-Stack App (Part A)
 <!-- omit in toc -->
 ## Desperate Housewares App
+<!-- omit in toc -->
 ### Table of Contents
-- [Table of Contents](#table-of-contents)
 - [Problem Identified](#problem-identified)
 - [Purpose](#purpose)
 - [Target Audience](#target-audience)
