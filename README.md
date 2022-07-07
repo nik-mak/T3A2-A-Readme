@@ -35,11 +35,15 @@ This web application has the main purpose of giving a better market visibility t
 
 As a user, I want to be able to view a store's list of products or catalogue so that I can find an item.
 
+As a user, I want to be able to sign up/create account so I can utilise the website features.
+
 As a user, I want to be able to delete my account because I no longer want to use this service.
 
 As a user, I want to be able to update my account so that changes in my details are current.
 
 As a user, I should be able to log into my account so that I can use the website as desired.
+
+As a user, I want to be able to recover my password so that I can log in if I forget it.
 
 As a shopper, I want to be able to view listings I have placed on hold so that I can manage them. 
 
@@ -93,7 +97,6 @@ As a staff member, I want to be able to chat to shoppers who are requesting to f
 * Searching
 
 ### Tech Stack
-
 
 
 ### Dataflow Diagram
