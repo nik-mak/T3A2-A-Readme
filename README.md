@@ -5,16 +5,16 @@
 ___
 <!-- omit in toc -->
 ### Table of Contents
-- [Problem Identified](#problem-identified)
-- [Purpose](#purpose)
-- [Target Audience](#target-audience)
-- [User Stories](#user-stories)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Dataflow Diagram](#dataflow-diagram)
-- [Application Architecture Diagram](#application-architecture-diagram)
-- [Wireframes](#wireframes)
-- [Trello Board Progress](#trello-board-progress)
+1. [Problem Identified](#problem-identified)
+2. [Purpose](#purpose)
+3. [Target Audience](#target-audience)
+4. [User Stories](#user-stories)
+5. [Features](#features)
+6. [Tech Stack](#tech-stack)
+7. [Dataflow Diagram](#dataflow-diagram)
+8. [Application Architecture Diagram](#application-architecture-diagram)
+9. [Wireframes](#wireframes)
+10. [Trello Board Progress](#trello-board-progress)
 
 ### Problem Identified
 
@@ -89,12 +89,15 @@ As a staff member, I want to be able to chat to shoppers who are requesting to f
 
 ### Features
 
-* Payment system
-* Multi-stores
-* Communication
-* Admin dashboard
-* Calendar
-* Searching
+* User sign up with allocation of roles
+* User authentication and authorisation via JWT and Bcrypt
+* Display store catalogue items to all users
+* Features exclusive to store employees:
+  * Add, edit and delete listing items
+  * Add and delete staff members (admin only)
+  * View list of items put on hold by shoppers
+* Features exclusive to shoppers:
+  * Add items into shopping bag for pick up at store
 
 ### Tech Stack
 
