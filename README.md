@@ -105,7 +105,7 @@ As a staff member, I want to be able to chat to shoppers who are requesting to f
 
 ### Application Architecture Diagram
 
-
+![Application Architecture Diagram](assets/AAD.png)
 
 ### Wireframes
 
