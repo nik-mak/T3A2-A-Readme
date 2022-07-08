@@ -5,16 +5,16 @@
 ___
 <!-- omit in toc -->
 ### Table of Contents
-- [Problem Identified](#problem-identified)
-- [Purpose](#purpose)
-- [Target Audience](#target-audience)
-- [User Stories](#user-stories)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Dataflow Diagram](#dataflow-diagram)
-- [Application Architecture Diagram](#application-architecture-diagram)
-- [Wireframes](#wireframes)
-- [Trello Board Progress](#trello-board-progress)
+1. [Problem Identified](#problem-identified)
+2. [Purpose](#purpose)
+3. [Target Audience](#target-audience)
+4. [User Stories](#user-stories)
+5. [Features](#features)
+6. [Tech Stack](#tech-stack)
+7. [Dataflow Diagram](#dataflow-diagram)
+8. [Application Architecture Diagram](#application-architecture-diagram)
+9. [Wireframes](#wireframes)
+10. [Trello Board Progress](#trello-board-progress)
 
 ### Problem Identified
 
@@ -35,11 +35,15 @@ This web application has the main purpose of giving a better market visibility t
 
 As a user, I want to be able to view a store's list of products or catalogue so that I can find an item.
 
+As a user, I want to be able to sign up/create account so I can utilise the website features.
+
 As a user, I want to be able to delete my account because I no longer want to use this service.
 
 As a user, I want to be able to update my account so that changes in my details are current.
 
 As a user, I should be able to log into my account so that I can use the website as desired.
+
+As a user, I want to be able to recover my password so that I can log in if I forget it.
 
 As a shopper, I want to be able to view listings I have placed on hold so that I can manage them. 
 
@@ -85,15 +89,17 @@ As a staff member, I want to be able to chat to shoppers who are requesting to f
 
 ### Features
 
-* Payment system
-* Multi-stores
-* Communication
-* Admin dashboard
-* Calendar
-* Searching
+* User sign up with allocation of roles
+* User authentication and authorisation via JWT and Bcrypt
+* Display store catalogue items to all users
+* Features exclusive to store employees:
+  * Add, edit and delete listing items
+  * Add and delete staff members (admin only)
+  * View list of items put on hold by shoppers
+* Features exclusive to shoppers:
+  * Add items into shopping bag for pick up at store
 
 ### Tech Stack
-
 
 
 ### Dataflow Diagram
@@ -122,7 +128,7 @@ The manager/admin DFD shows that they are the only ones with access to the admin
 
 ### Application Architecture Diagram
 
-
+![Application Architecture Diagram](assets/AAD.png)
 
 ### Wireframes
 
