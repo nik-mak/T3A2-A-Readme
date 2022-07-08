@@ -4,7 +4,6 @@
 ## Desperate Housewares App
 <!-- omit in toc -->
 ### Table of Contents
-<<<<<<< HEAD
 - [Problem Identified](#problem-identified)
 - [Purpose](#purpose)
 - [Target Audience](#target-audience)
