@@ -205,6 +205,8 @@ The manager/admin DFD shows that they are the only ones with access to the admin
 
 
 ### Application Architecture Diagram
+![Application Architecture Diagram](assets/AAD.png)
+
 ### **Wire frames**
 
 <details open>
@@ -215,7 +217,6 @@ This section contains a list of wire frames for all screen widths. Each designed
 
 To keep the website design modern we have decided to use Oswald with varying weights to put emphasis on important content such as headings. Oswald belongs to the Sans-Serif typeface family which is shown to significantly improve the reading performance of individuals with dyslexia. (Luz Rello and Ricardo Baeza-Yates, Good Fonts for Dyslexia, 21 October 2013) This was another important factor in our decision to use Oswald. 
 
-![Application Architecture Diagram](assets/AAD.png)
 
 The colors chosen for the website  (excluding white and black) are red, blue and yellow or specifically #B30000, #2555AD and #FAC904 respectively. These colors have been contrast checked using web-aims online contrast checker (see webAIM Screenshots below).
 
