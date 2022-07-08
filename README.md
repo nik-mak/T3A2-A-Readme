@@ -1,8 +1,8 @@
-<!-- omit in toc -->
 # T3A2-A Full-Stack App (Part A)
-<!-- omit in toc -->
+
 ## Desperate Housewares App
-<!-- omit in toc -->
+### Team Members: Benjamin Stuart, Gisele Lima, Nikolaos Makrakis
+
 ### Table of Contents
 1. [Problem Identified](#problem-identified)
 2. [Purpose](#purpose)
