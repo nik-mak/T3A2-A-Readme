@@ -467,6 +467,52 @@ To meet the criteria of our MVP the design incorporates three menu, these are di
 
 ### Trello Board Progress
 
+For our project we have decided to use a implement kanban board with regular meetings and standups. This Kanban board is designed to be used to management the project by following the below steps. 
+
+1. Make User Stories and other project related tasks visible on the board by adding all tasks as cards to the **Backlog** list;
+
+2. Move the cards one-by-one to **To Do** as they becomes more fleshed out while giving preference to the highest priorities;
+
+3. Move card to **In Progress** and assign owner name to the card;
+  * Owners need to create a checklist for each of their cards (at least 5 tasks per checklist);
+
+4. Once completed, card is moved to **Review** for final tests to see how that feature is interacting with other ones;
+ 
+5. When tests and/or review are successful, move card to **Completed** and celebrate that win!
+ 
+6. When deployment is achieved, move cards to **Deployed**, celebrate one more time!
+ 
+7. Now it's time to check the **Backlog** for the next task.
+
+Below is a series of screenshots with the progress that we have achieved thus far. 
+
+**04/07/2022**
+
+![Trello 04/07/2022 2](./assets/Trello22022-07-04.png)
+![Trello 04/07/2022 2](./assets/Trello2022-07-04.png)
+
+
+**05/07/2022**
+
+![Trello 04/07/2022 2](./assets/Trello22022-07-05.png)
+![Trello 04/07/2022 1](./assets/Trello2022-07-05.png)
+
+**06/07/2022**
+
+![Trello 04/07/2022 2](./assets/Trello22022-07-06.png)
+![Trello 04/07/2022 1](./assets/Trello2022-07-06.png)
+
+**07/07/2022**
+
+![Trello 04/07/2022 2](./assets/Trello22022-07-07.png)
+![Trello 04/07/2022 1](./assets/Trello2022-07-07.png)
+
+**08/07/2022**
+
+![Trello 04/07/2022 1](./assets/Trello22022-07-08.png)
+![Trello 04/07/2022 2](./assets/Trello2022-07-08.png)
+
+The trello board can be found here: [Desperate Housewives Trello](https://trello.com/invite/b/BzgS0oZt/641fd4be604d47fca55fb75d6d5855c0/team-project)
 
 ### References
 
