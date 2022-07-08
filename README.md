@@ -5,42 +5,45 @@
 <!-- omit in toc -->
 ### Table of Contents
 <<<<<<< HEAD
-- [* As a user, I want to be able to delete my account because I no longer want to use this service.](#-as-a-user-i-want-to-be-able-to-delete-my-account-because-i-no-longer-want-to-use-this-service)
-- [* As a shopper, I want to be able to view listings I have placed on hold so that I can manage them.](#-as-a-shopper-i-want-to-be-able-to-view-listings-i-have-placed-on-hold-so-that-i-can-manage-them)
-      - [Administrator:](#administrator)
-      - [Staff member:](#staff-member)
-      - [Non-MVP User Stories:](#non-mvp-user-stories)
-    - [Features](#features)
-    - [Tech Stack](#tech-stack)
-    - [Dataflow Diagram](#dataflow-diagram)
-    - [Application Architecture Diagram](#application-architecture-diagram)
-    - [**Wire frames**](#wire-frames)
-      - [**Homepage Design:**](#homepage-design)
-        - [Homepage Phone View](#homepage-phone-view)
-        - [Homepage Tablet View](#homepage-tablet-view)
-        - [Homepage Desktop View](#homepage-desktop-view)
-      - [**Held Listings Page Design:**](#held-listings-page-design)
-        - [Held Listings Phone View](#held-listings-phone-view)
-        - [Held Listings Tablet View](#held-listings-tablet-view)
-        - [Held Listings Desktop View](#held-listings-desktop-view)
-      - [**Admin Dashboard Page Design:**](#admin-dashboard-page-design)
-        - [Admin Dashboard Phone View](#admin-dashboard-phone-view)
-        - [Admin Dashboard Tablet View](#admin-dashboard-tablet-view)
-        - [Admin Dashboard Desktop View](#admin-dashboard-desktop-view)
-      - [**Modal Designs**](#modal-designs)
-        - [Add Staff Modal](#add-staff-modal)
-        - [Change Password Modal](#change-password-modal)
-        - [Delete Account Modal](#delete-account-modal)
-        - [Manage Account Modal](#manage-account-modal)
-        - [Manage Listing Modal](#manage-listing-modal)
-        - [Sign In Modal](#sign-in-modal)
-        - [Sign Up Modal](#sign-up-modal)
-      - [**Menus Design:**](#menus-design)
-        - [Hamburger Menu](#hamburger-menu)
-        - [Settings Menu](#settings-menu)
-        - [Shopping Cart Menu](#shopping-cart-menu)
-    - [Trello Board Progress](#trello-board-progress)
-    - [References](#references)
+- [Problem Identified](#problem-identified)
+- [Purpose](#purpose)
+- [Target Audience](#target-audience)
+- [User Stories](#user-stories)
+  - [Customers (users and shoppers):](#customers-users-and-shoppers)
+  - [Administrator:](#administrator)
+  - [Staff member:](#staff-member)
+  - [Non-MVP User Stories:](#non-mvp-user-stories)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Dataflow Diagram](#dataflow-diagram)
+- [Application Architecture Diagram](#application-architecture-diagram)
+- [**Wire frames**](#wire-frames)
+  - [**Homepage Design:**](#homepage-design)
+    - [Homepage Phone View](#homepage-phone-view)
+    - [Homepage Tablet View](#homepage-tablet-view)
+    - [Homepage Desktop View](#homepage-desktop-view)
+  - [**Held Listings Page Design:**](#held-listings-page-design)
+    - [Held Listings Phone View](#held-listings-phone-view)
+    - [Held Listings Tablet View](#held-listings-tablet-view)
+    - [Held Listings Desktop View](#held-listings-desktop-view)
+  - [**Admin Dashboard Page Design:**](#admin-dashboard-page-design)
+    - [Admin Dashboard Phone View](#admin-dashboard-phone-view)
+    - [Admin Dashboard Tablet View](#admin-dashboard-tablet-view)
+    - [Admin Dashboard Desktop View](#admin-dashboard-desktop-view)
+  - [**Modal Designs**](#modal-designs)
+    - [Add Staff Modal](#add-staff-modal)
+    - [Change Password Modal](#change-password-modal)
+    - [Delete Account Modal](#delete-account-modal)
+    - [Manage Account Modal](#manage-account-modal)
+    - [Manage Listing Modal](#manage-listing-modal)
+    - [Sign In Modal](#sign-in-modal)
+    - [Sign Up Modal](#sign-up-modal)
+  - [**Menus Design:**](#menus-design)
+    - [Hamburger Menu](#hamburger-menu)
+    - [Settings Menu](#settings-menu)
+    - [Shopping Cart Menu](#shopping-cart-menu)
+- [Trello Board Progress](#trello-board-progress)
+- [References](#references)
 
 ### Problem Identified
 
@@ -61,25 +64,21 @@ This web application has the main purpose of giving a better market visibility t
 
 * As a user, I want to be able to view a store's list of products or catalogue so that I can find an item.
 
-<<<<<<< HEAD
 * As a user, I want to be able to delete my account because I no longer want to use this service.
-=======
-As a user, I want to be able to sign up/create account so I can utilise the website features.
 
-As a user, I want to be able to delete my account because I no longer want to use this service.
->>>>>>> d7698db914ebf611a3cdf6e77abff13e88812b00
+* As a user, I want to be able to sign up/create account so I can utilise the website features.
+
+* As a user, I want to be able to delete my account because I no longer want to use this service.
 
 * As a user, I want to be able to update my account so that changes in my details are current.
 
 * As a user, I should be able to log into my account so that I can use the website as desired.
 
-<<<<<<< HEAD
 * As a shopper, I want to be able to view listings I have placed on hold so that I can manage them. 
-=======
-As a user, I want to be able to recover my password so that I can log in if I forget it.
 
-As a shopper, I want to be able to view listings I have placed on hold so that I can manage them. 
->>>>>>> d7698db914ebf611a3cdf6e77abff13e88812b00
+* As a user, I want to be able to recover my password so that I can log in if I forget it.
+
+* As a shopper, I want to be able to view listings I have placed on hold so that I can manage them. 
 
 * As a shopper, I want to be able to pay online for a listing item so that it can be held at the store for me to collect. 
 
@@ -136,8 +135,6 @@ As a shopper, I want to be able to view listings I have placed on hold so that I
 ### Tech Stack
 
 Desperate housewives will make use of the following technologies as a part of its architecture and development:
-
-<<<<<<< HEAD
 **MERN**
 
 - [**M**ongoDb](https://www.mongodb.com/mern-stack), is a non-relational document database that will be used to store the data required for the websites functions. 
@@ -184,9 +181,6 @@ is a javascript testing framework that will be implemented for our unit testing.
 [**Git**](https://git-scm.com/)
 
 Git is an open source version control system that will be used to handle version control.
-
-=======
->>>>>>> d7698db914ebf611a3cdf6e77abff13e88812b00
 ### Dataflow Diagram
 The dataflow diagrams (DFD) reflects the movement of data throughout the program.Rather than have one large diagram, they have been split into multiple DFDs to make understanding them easier.
 
@@ -212,8 +206,6 @@ The manager/admin DFD shows that they are the only ones with access to the admin
 
 
 ### Application Architecture Diagram
-
-<<<<<<< HEAD
 ### **Wire frames**
 
 <details open>
@@ -224,9 +216,7 @@ This section contains a list of wire frames for all screen widths. Each designed
 
 To keep the website design modern we have decided to use Oswald with varying weights to put emphasis on important content such as headings. Oswald belongs to the Sans-Serif typeface family which is shown to significantly improve the reading performance of individuals with dyslexia. (Luz Rello and Ricardo Baeza-Yates, Good Fonts for Dyslexia, 21 October 2013) This was another important factor in our decision to use Oswald. 
 
-=======
 ![Application Architecture Diagram](assets/AAD.png)
->>>>>>> d7698db914ebf611a3cdf6e77abff13e88812b00
 
 The colors chosen for the website  (excluding white and black) are red, blue and yellow or specifically #B30000, #2555AD and #FAC904 respectively. These colors have been contrast checked using web-aims online contrast checker (see webAIM Screenshots below).
 
@@ -259,7 +249,6 @@ A deeper discussion that outlines design choices such as but not limited to spac
 ![Homepage Desktop](./assets/Homepage-Desktop.png)
 
 </details>
-
 
 <details open>
 <summary> Homepage Design overview </summary>
