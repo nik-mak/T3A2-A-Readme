@@ -1,48 +1,25 @@
-<!-- omit in toc -->
 # T3A2-A Full-Stack App (Part A)
-<!-- omit in toc -->
+
 ## Desperate Housewares App
-<!-- omit in toc -->
+### Team Members: Benjamin Stuart, Gisele Lima, Nikolaos Makrakis
+
 ### Table of Contents
-- [Problem Identified](#problem-identified)
-- [Purpose](#purpose)
-- [Target Audience](#target-audience)
-- [User Stories](#user-stories)
-  - [Customers (users and shoppers):](#customers-users-and-shoppers)
-  - [Administrator:](#administrator)
-  - [Staff member:](#staff-member)
-  - [Non-MVP User Stories:](#non-mvp-user-stories)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Dataflow Diagram](#dataflow-diagram)
-- [Application Architecture Diagram](#application-architecture-diagram)
-- [**Wire frames**](#wire-frames)
-  - [**Homepage Design:**](#homepage-design)
-    - [Homepage Phone View](#homepage-phone-view)
-    - [Homepage Tablet View](#homepage-tablet-view)
-    - [Homepage Desktop View](#homepage-desktop-view)
-  - [**Held Listings Page Design:**](#held-listings-page-design)
-    - [Held Listings Phone View](#held-listings-phone-view)
-    - [Held Listings Tablet View](#held-listings-tablet-view)
-    - [Held Listings Desktop View](#held-listings-desktop-view)
-  - [**Admin Dashboard Page Design:**](#admin-dashboard-page-design)
-    - [Admin Dashboard Phone View](#admin-dashboard-phone-view)
-    - [Admin Dashboard Tablet View](#admin-dashboard-tablet-view)
-    - [Admin Dashboard Desktop View](#admin-dashboard-desktop-view)
-  - [**Modal Designs**](#modal-designs)
-    - [Add Staff Modal](#add-staff-modal)
-    - [Change Password Modal](#change-password-modal)
-    - [Delete Account Modal](#delete-account-modal)
-    - [Manage Account Modal](#manage-account-modal)
-    - [Manage Listing Modal](#manage-listing-modal)
-    - [Sign In Modal](#sign-in-modal)
-    - [Sign Up Modal](#sign-up-modal)
-  - [**Menus Design:**](#menus-design)
-    - [Hamburger Menu](#hamburger-menu)
-    - [Settings Menu](#settings-menu)
-    - [Shopping Cart Menu](#shopping-cart-menu)
-- [Trello Board Progress](#trello-board-progress)
-- [References](#references)
+1. [Problem Identified](#problem-identified)
+2. [Purpose](#purpose)
+3. [Target Audience](#target-audience)
+4. [User Stories](#user-stories)
+5. [Features](#features)
+6. [Tech Stack](#tech-stack)
+7. [Dataflow Diagram](#dataflow-diagram)
+8. [Application Architecture Diagram](#application-architecture-diagram)
+9. [Wireframes](#wire-frames)
+   1. [Homepage Design](#homepage-design)
+   2. [Held Listings Page Design](#held-listings-page-design)
+   3. [Admin Dashboard Page Design](#admin-dashboard-page-design)
+   4. [Modal Designs](#modal-designs)
+   5. [Menus Design](#menus-design)
+10. [Trello Board Progress](#trello-board-progress)
+11. [References](#references)
 
 ### Problem Identified
 
@@ -59,7 +36,7 @@ This web application has the main purpose of giving a better market visibility t
 
 ### User Stories
 
-#### Customers (users and shoppers): 
+#### Customers (users and shoppers)
 
 * As a user, I want to be able to view a store's list of products or catalogue so that I can find an item.
 
@@ -72,6 +49,8 @@ This web application has the main purpose of giving a better market visibility t
 * As a user, I want to be able to update my account so that changes in my details are current.
 
 * As a user, I should be able to log into my account so that I can use the website as desired.
+  
+* As a shopper, I want to be able to place a product on hold at the store so that I can go in and pay/pick it up.
 
 * As a shopper, I want to be able to view listings I have placed on hold so that I can manage them. 
 
@@ -83,7 +62,7 @@ This web application has the main purpose of giving a better market visibility t
 
 * As a shopper, I want a confirmation email for the product so that I know all the details.
 
-#### Administrator:
+#### Administrator
 
 * As an administrator, I want to be able to add a user to a store as staff so that they can post product listings in the store's catalogue. 
 
@@ -91,7 +70,7 @@ This web application has the main purpose of giving a better market visibility t
 
 * As an administrator, I want to be able to remove staff from the store because they no longer work there. 
 
-#### Staff member:
+#### Staff member
 
 * As a staff member, I want to be able to add products to a store's catalogue so that shoppers can place an order on them.
 
@@ -101,7 +80,7 @@ This web application has the main purpose of giving a better market visibility t
 
 * As a staff member, I want to be able to update a products listing so that changes can be added/removed from the listing.
 
-#### Non-MVP User Stories: 
+#### Non-MVP User Stories
 
 * As a user, I want to be able to view a list of stores so that I can find a store close to me. 
 
@@ -124,12 +103,14 @@ This web application has the main purpose of giving a better market visibility t
 * User sign up with allocation of roles
 * User authentication and authorisation via JWT and Bcrypt
 * Display store catalogue items to all users
+* Image handling and optimisation via Cloudinary Node SDK
 * Features exclusive to store employees:
   * Add, edit and delete listing items
   * Add and delete staff members (admin only)
   * View list of items put on hold by shoppers
 * Features exclusive to shoppers:
   * Add items into shopping bag for pick up at store
+  * Order payment via Stripe
 
 ### Tech Stack
 
@@ -175,7 +156,7 @@ Mongoose is an object modelling library for node.js that enables schema-based mo
 
 [**Jest**](https://jestjs.io/)
 
-is a javascript testing framework that will be implemented for our unit testing.
+Jest is a javascript testing framework that will be implemented for our unit testing.
 
 [**Git**](https://git-scm.com/)
 
@@ -205,9 +186,10 @@ The manager/admin DFD shows that they are the only ones with access to the admin
 
 
 ### Application Architecture Diagram
+
 ![Application Architecture Diagram](assets/AAD.png)
 
-### **Wire frames**
+### Wireframes
 
 <details open>
 <summary> General Design Choices </summary>
@@ -235,7 +217,7 @@ A deeper discussion that outlines design choices such as but not limited to spac
 </details>
 </details>
 
-#### **Homepage Design:**
+#### Homepage Design
 
 <details open>
 <summary> Homepage Wireframes </summary>
@@ -274,7 +256,7 @@ Additional design considerations that improve the user experience and build upon
 
 </details>
 
-#### **Held Listings Page Design:**
+#### Held Listings Page Design
 
 <details open>
 <summary>Held Listings Page Wire-frames</summary>
@@ -309,7 +291,7 @@ Initially the design included a table that documented the holdings in a similar 
 
 </details>
 
-#### **Admin Dashboard Page Design:**
+#### Admin Dashboard Page Design
 
 <details open>
 <summary>Admin Dashboard Page Wire-frames</summary>
@@ -332,7 +314,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
  
 </details>
 
-#### **Modal Designs**
+#### Modal Designs
 
 <details open>
 <summary>Modal Wireframes</summary>
@@ -417,7 +399,7 @@ The design of these modals makes responsiveness easy to optimize for mobile scre
 
 </details>
 
-#### **Menus Design:**
+#### Menus Design
 
 <details open>
 <summary>Menu Wireframes</summary>
