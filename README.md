@@ -1,7 +1,13 @@
-# T3A2-A Full-Stack App (Part A)
+# T3A2-A Full-Stack App (Part A & B)
 
 ## Desperate Housewares App
+
+### Deployed Application: [Desperate Housewares](https://www.desperate-housewares.com/)
 ### Team Members: Benjamin Stuart, Gisele Lima, Nikolaos Makrakis
+
+### GitHub Repositories
+1. [Frontend React App](https://github.com/desperate-housewares/dh-frontend-cra.git)
+2. [Backend API](https://github.com/desperate-housewares/dh-backend.git)
 
 ### Table of Contents
 1. [Problem Identified](#problem-identified)
@@ -10,9 +16,11 @@
 4. [User Stories](#user-stories)
 5. [Features](#features)
 6. [Tech Stack](#tech-stack)
+   1. [Back-End Dependencies](#back-end-dependencies)
+   2. [Front-End Dependencies](#front-end-dependencies)
 7. [Dataflow Diagram](#dataflow-diagram)
 8. [Application Architecture Diagram](#application-architecture-diagram)
-9. [Wireframes](#wire-frames)
+9.  [Wireframes](#wire-frames)
    1. [Homepage Design](#homepage-design)
    2. [Held Listings Page Design](#held-listings-page-design)
    3. [Admin Dashboard Page Design](#admin-dashboard-page-design)
@@ -114,7 +122,8 @@ This web application has the main purpose of giving a better market visibility t
 
 ### Tech Stack
 
-Desperate housewives will make use of the following technologies as a part of its architecture and development:
+Desperate housewives will make use of the following technologies as a part of its architecture and development:  
+
 **MERN**
 
 - [**M**ongoDb](https://www.mongodb.com/mern-stack), is a non-relational document database that will be used to store the data required for the websites functions. 
@@ -134,13 +143,13 @@ Tailwind is css framework that will be used to make styling the website more eff
 
 MUI components is a react library that will be used to make the creation of Modals quicker and easier. 
 
-[**JWT**](https://jwt.io/) **&** [**Bcrypt**](https://www.npmjs.com/package/bcrypt)
+[**JWT**](https://jwt.io/)
 
-JWT (JSON web token) and Bcrypt are both javascript packages that will be used together to handle the secure transfer of user information as well as manage authentication and authorization.  
+JavaScript Web Token is used to create a secure user authentication and authorisation with a digitally signed token allocated to each user's session, that can be verified and validated in the frontend and backend.
 
 [**Cloudinary**](https://cloudinary.com/)
 
-Cloudinary is cloud based storage platform that will be used to configure and implement secure upload and storage of images across the website.
+Cloudinary is the cloud based storage platform used to configure and implement secure upload and storage of images across the website.
 
 [**Netlify**](https://www.netlify.com/?utm_source=google&utm_medium=paid_search&utm_campaign=12755510784&adgroup=118788138897&utm_term=netlify&utm_content=kwd-371509120223&creative=516906172749&device=c&matchtype=e&location=9068943&gclid=Cj0KCQjw5ZSWBhCVARIsALERCvwAkBmIujy1-TOw6iUvUcHDeNQXU07dNqdKqpBl_jsjmmeiQi0VJQ8aAvDVEALw_wcB)
 
@@ -150,17 +159,39 @@ Netlify is a cloud computing platform that will host the applications front end 
 
 Heroku is a cloud computing platform that will host the applications API in production.
 
-[**Mongoose**](https://mongoosejs.com/)
-
-Mongoose is an object modelling library for node.js that enables schema-based models to be implemented in our server API. 
-
 [**Jest**](https://jestjs.io/)
 
-Jest is a javascript testing framework that will be implemented for our unit testing.
+Jest is a javascript testing framework used for unit and integration tests, covering frontend and backend testing.
 
 [**Git**](https://git-scm.com/)
 
-Git is an open source version control system that will be used to handle version control.
+Git is an open source version control system used to handle version control of all project repositories.
+
+#### Back-End Dependencies
+
+1. [express](https://github.com/expressjs/express)  
+   Web framework for Node.js that provides simple features that made the development of this application more efficient.
+2. [dotenv](https://github.com/motdotla/dotenv)  
+   This package is used to be able to safely store environment variables in a `.env` file and load them when required through the global object `process.env`.
+3. [multer](https://github.com/expressjs/multer)  
+   A middleware responsible for handling the multipart/form-data, which is required in order to handle the data sent by the frontend forms with image upload.
+4. [Cloudinary Node SDK](https://github.com/cloudinary/cloudinary_npm)  
+   This Software Development Kit includes the necessary tools to integrate the server API with Cloudinary in order to upload and retrieve images.
+5. [multer-storage-cloudinary](https://github.com/affanshahid/multer-storage-cloudinary)  
+   This package provides an easy way to inform `multer` that the file should be stored in Cloudinary.   
+6. [express-session](https://github.com/expressjs/session)  
+   A module used to create and manage session middleware for the Express app.  
+7. [CORS](https://github.com/expressjs/cors)  
+   
+8. [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)  
+9.  [bcrypt](https://github.com/kelektiv/node.bcrypt.js)  
+   jsonwebtoken and bcrypt are both javascript packages used together to handle the secure transfer of user information as well as manage authentication and authorization.  
+10. [mongoose](https://mongoosejs.com/)  
+   Mongoose is an object modelling library for node.js that enables schema-based models to be implemented in our server API.
+11. [connect-mongo](https://github.com/jdesboeufs/connect-mongo)  
+
+#### Front-End Dependencies
+
 ### Dataflow Diagram
 The dataflow diagrams (DFD) reflects the movement of data throughout the program.Rather than have one large diagram, they have been split into multiple DFDs to make understanding them easier.
 
@@ -182,12 +213,12 @@ The staff DFD reflects the process of adding, editing, and deleting an item. Onl
 
 The manager/admin DFD shows that they are the only ones with access to the admin dashboard. The admin dashboard is the only place where the role of an account can be edited (i.e. add or remove staff). They also have access to all features available to staff.
 
-![DFD](./assets/DFD%20-%20T3A2.png)
+![DFD](./docs/DFD%20-%20T3A2.png)
 
 
 ### Application Architecture Diagram
 
-![Application Architecture Diagram](assets/AAD.png)
+![Application Architecture Diagram](./docs/AAD.png)
 
 ### Wireframes
 
@@ -209,9 +240,9 @@ A deeper discussion that outlines design choices such as but not limited to spac
 <br>
 
 
-![blue](./assets/Blue-Webaim.png)
-![red](./assets/Red-Webaim.png)
-![yellow](./assets/yellow-Webaim.png)
+![blue](./docs/Blue-Webaim.png)
+![red](./docs/Red-Webaim.png)
+![yellow](./docs/yellow-Webaim.png)
 
 
 </details>
@@ -224,11 +255,11 @@ A deeper discussion that outlines design choices such as but not limited to spac
 <br>
 
 ##### Homepage Phone View
-![Homepage Phone](./assets/Homepage-Phone.png)
+![Homepage Phone](./docs/Homepage-Phone.png)
 ##### Homepage Tablet View
-![Homepage Tablet](./assets/Homepage-Tablet.png)
+![Homepage Tablet](./docs/Homepage-Tablet.png)
 ##### Homepage Desktop View
-![Homepage Desktop](./assets/Homepage-Desktop.png)
+![Homepage Desktop](./docs/Homepage-Desktop.png)
 
 </details>
 
@@ -263,11 +294,11 @@ Additional design considerations that improve the user experience and build upon
 <br>
 
 ##### Held Listings Phone View
-![Held Listings Phone](./assets/Held-Listings-Phone.png)
+![Held Listings Phone](./docs/Held-Listings-Phone.png)
 ##### Held Listings Tablet View
-![Held Listing Tablet](./assets/Held-Listings-Tablet.png)
+![Held Listing Tablet](./docs/Held-Listings-Tablet.png)
 ##### Held Listings Desktop View
-![Held Listing Desktop](./assets/Held-Listings-Desktop.png)
+![Held Listing Desktop](./docs/Held-Listings-Desktop.png)
 
 </details>
 
@@ -298,11 +329,11 @@ Initially the design included a table that documented the holdings in a similar 
 <br>
 
 ##### Admin Dashboard Phone View
-![Admin Dashboard Phone](./assets/Admin-Dashboard-Phone.png)
+![Admin Dashboard Phone](./docs/Admin-Dashboard-Phone.png)
 ##### Admin Dashboard Tablet View
-![Admin Dashboard Tablet](./assets/Admin-Dashboard-Tablet.png)
+![Admin Dashboard Tablet](./docs/Admin-Dashboard-Tablet.png)
 ##### Admin Dashboard Desktop View
-![Admin Dashboard Desktop](./assets/Admin-Dashboard-Desktop.png)
+![Admin Dashboard Desktop](./docs/Admin-Dashboard-Desktop.png)
 
 </details>
 
@@ -325,7 +356,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
 <br>
 
 ##### Add Staff Modal
-![Add Staff Modal](./assets/Add-Staff-Modal.png)
+![Add Staff Modal](./docs/Add-Staff-Modal.png)
 
 </details>
 
@@ -334,7 +365,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
 <br>
 
 ##### Change Password Modal
-![Change Password Modal](./assets/Change-Password-Modal.png)
+![Change Password Modal](./docs/Change-Password-Modal.png)
 
 </details>
 
@@ -343,7 +374,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
 <br>
 
 ##### Delete Account Modal
-![Delete Account Modal](./assets/Delete-Account-Modal.png)
+![Delete Account Modal](./docs/Delete-Account-Modal.png)
 
 </details>
 
@@ -352,7 +383,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
 <br>
 
 ##### Manage Account Modal
-![Manage Account Modal](./assets/Manage-Account-Modal.png)
+![Manage Account Modal](./docs/Manage-Account-Modal.png)
 
 </details>
 
@@ -361,7 +392,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
 <br>
 
 ##### Manage Listing Modal
-![Manage Listing Modal](./assets/Manage-Listing-Modal.png)
+![Manage Listing Modal](./docs/Manage-Listing-Modal.png)
 
 </details>
 
@@ -370,7 +401,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
 <br>
 
 ##### Sign In Modal
-![Sign In Modal](./assets/Sign-In-Modal.png)
+![Sign In Modal](./docs/Sign-In-Modal.png)
 
 </details>
 
@@ -379,7 +410,7 @@ The Admin Dashboard page is used by an administer to add new staff to the store 
 <br>
 
 ##### Sign Up Modal
-![Sign Up Modal](./assets/Sign-Up-Modal.png)
+![Sign Up Modal](./docs/Sign-Up-Modal.png)
 
 </details>
 
@@ -410,7 +441,7 @@ The design of these modals makes responsiveness easy to optimize for mobile scre
 <br>
 
 ##### Hamburger Menu
-![Hamburger Menu](./assets/Hamburger-Menu.png)
+![Hamburger Menu](./docs/Hamburger-Menu.png)
 
 </details>
 
@@ -419,7 +450,7 @@ The design of these modals makes responsiveness easy to optimize for mobile scre
 <br>
 
 ##### Settings Menu
-![Settings Menu](./assets/Settings-Menu.png)
+![Settings Menu](./docs/Settings-Menu.png)
 
 </details>
 
@@ -428,7 +459,7 @@ The design of these modals makes responsiveness easy to optimize for mobile scre
 <br>
 
 ##### Shopping Cart Menu
-![Shopping Cart Menu](./assets/Shopping-Cart-Menu.png)
+![Shopping Cart Menu](./docs/Shopping-Cart-Menu.png)
 
 </details>
 
@@ -449,6 +480,8 @@ To meet the criteria of our MVP the design incorporates three menu, these are di
 </details>
 
 ### Trello Board Progress
+
+The Trello board can be found here: [Desperate Housewives Trello](https://trello.com/invite/b/BzgS0oZt/641fd4be604d47fca55fb75d6d5855c0/team-project)
 
 For our project we have decided to use a implement kanban board with regular meetings and standups. This Kanban board is designed to be used to management the project by following the below steps. 
 
@@ -471,31 +504,29 @@ Below is a series of screenshots with the progress that we have achieved thus fa
 
 **04/07/2022**
 
-![Trello 04/07/2022 2](./assets/Trello22022-07-04.png)
-![Trello 04/07/2022 2](./assets/Trello2022-07-04.png)
+![Trello 04/07/2022 2](./docs/Trello22022-07-04.png)
+![Trello 04/07/2022 2](./docs/Trello2022-07-04.png)
 
 
 **05/07/2022**
 
-![Trello 04/07/2022 2](./assets/Trello22022-07-05.png)
-![Trello 04/07/2022 1](./assets/Trello2022-07-05.png)
+![Trello 04/07/2022 2](./docs/Trello22022-07-05.png)
+![Trello 04/07/2022 1](./docs/Trello2022-07-05.png)
 
 **06/07/2022**
 
-![Trello 04/07/2022 2](./assets/Trello22022-07-06.png)
-![Trello 04/07/2022 1](./assets/Trello2022-07-06.png)
+![Trello 04/07/2022 2](./docs/Trello22022-07-06.png)
+![Trello 04/07/2022 1](./docs/Trello2022-07-06.png)
 
 **07/07/2022**
 
-![Trello 04/07/2022 2](./assets/Trello22022-07-07.png)
-![Trello 04/07/2022 1](./assets/Trello2022-07-07.png)
+![Trello 04/07/2022 2](./docs/Trello22022-07-07.png)
+![Trello 04/07/2022 1](./docs/Trello2022-07-07.png)
 
 **08/07/2022**
 
-![Trello 04/07/2022 1](./assets/Trello22022-07-08.png)
-![Trello 04/07/2022 2](./assets/Trello2022-07-08.png)
-
-The trello board can be found here: [Desperate Housewives Trello](https://trello.com/invite/b/BzgS0oZt/641fd4be604d47fca55fb75d6d5855c0/team-project)
+![Trello 04/07/2022 1](./docs/Trello22022-07-08.png)
+![Trello 04/07/2022 2](./docs/Trello2022-07-08.png)
 
 ### References
 
