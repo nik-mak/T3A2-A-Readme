@@ -16,8 +16,8 @@
 4. [User Stories](#user-stories)
 5. [Features](#features)
 6. [Tech Stack](#tech-stack)
-   1. [Back-End Dependencies](#back-end-dependencies)
-   2. [Front-End Dependencies](#front-end-dependencies)
+   1. [Backend Dependencies](#backend-dependencies)
+   2. [Frontend Dependencies](#frontend-dependencies)
 7. [Dataflow Diagram](#dataflow-diagram)
 8. [Application Architecture Diagram](#application-architecture-diagram)
 9.  [Wireframes](#wire-frames)
@@ -26,7 +26,7 @@
    3. [Admin Dashboard Page Design](#admin-dashboard-page-design)
    4. [Modal Designs](#modal-designs)
    5. [Menus Design](#menus-design)
-10. [Trello Board Progress](#trello-board-progress)
+10. [Trello Board & Project Management](#trello-board--project-management)
 11. [References](#references)
 
 ### Problem Identified
@@ -167,7 +167,7 @@ Jest is a javascript testing framework used for unit and integration tests, cove
 
 Git is an open source version control system used to handle version control of all project repositories.
 
-#### Back-End Dependencies
+#### Backend Dependencies
 
 1. [express](https://github.com/expressjs/express)  
    Web framework for Node.js that provides simple features that made the development of this application more efficient.
@@ -181,16 +181,28 @@ Git is an open source version control system used to handle version control of a
    This package provides an easy way to inform `multer` that the file should be stored in Cloudinary.   
 6. [express-session](https://github.com/expressjs/session)  
    A module used to create and manage session middleware for the Express app.  
-7. [CORS](https://github.com/expressjs/cors)  
-   
-8. [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)  
-9.  [bcrypt](https://github.com/kelektiv/node.bcrypt.js)  
-   jsonwebtoken and bcrypt are both javascript packages used together to handle the secure transfer of user information as well as manage authentication and authorization.  
-10. [mongoose](https://mongoosejs.com/)  
-   Mongoose is an object modelling library for node.js that enables schema-based models to be implemented in our server API.
-11. [connect-mongo](https://github.com/jdesboeufs/connect-mongo)  
+7.  [connect-mongo](https://github.com/jdesboeufs/connect-mongo)  
+   Module used to store Express sessions in MongoDB using a dedicated MongoDB connection.
+8. [mongoose](https://mongoosejs.com/)  
+   Mongoose is an object modelling library for Node.js that enables schema-based models and validations to be implemented in our server API.
+9. [CORS](https://github.com/expressjs/cors)  
+   This Node.js middleware is used allow data to flow between the frontend and the backend by adding CORS (Cross-Origin Resource Sharing) support to the server and informing which origin is allowed to access the server.
+10. [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)  
+   This package allows the implementation of JWT used for authentication and authorisation through the available `sign` and `verify` methods.
+11. [bcrypt](https://github.com/kelektiv/node.bcrypt.js)  
+   Library used for password hashing so it can be stored and transmitted securely through the application.
 
-#### Front-End Dependencies
+#### Frontend Dependencies
+
+1. [React](https://reactjs.org/)
+   A javascript framework used to build user interfaces for web application.
+2. [MUI](https://mui.com/)
+   A component based library that includes ready made components for use react projects. 
+   In addition to MUI we have also made use of some of their icons.
+3. [Axios](https://github.com/axios/axios#features)
+   A promise based HTTP client for the browser which used to make HTTP requests easier. 
+4. [Day.JS](https://day.js.org/)
+   A small 2kB extension that enables parsing and manipulating dates and times in the browser easier and faster.
 
 ### Dataflow Diagram
 The dataflow diagrams (DFD) reflects the movement of data throughout the program.Rather than have one large diagram, they have been split into multiple DFDs to make understanding them easier.
@@ -479,7 +491,7 @@ To meet the criteria of our MVP the design incorporates three menu, these are di
 
 </details>
 
-### Trello Board Progress
+### Trello Board & Project Management
 
 The Trello board can be found here: [Desperate Housewives Trello](https://trello.com/invite/b/BzgS0oZt/641fd4be604d47fca55fb75d6d5855c0/team-project)
 
