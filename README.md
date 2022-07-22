@@ -5,7 +5,7 @@
 ### Deployed Application: [Desperate Housewares](https://www.desperate-housewares.com/)
 ### Team Members: Benjamin Stuart, Gisele Lima, Nikolaos Makrakis
 
-### GitHub Repositories
+### GitHub Repositories & corresponding readmes: 
 1. [Frontend React App](https://github.com/desperate-housewares/dh-frontend-cra.git)
 2. [Backend API](https://github.com/desperate-housewares/dh-backend.git)
 
@@ -493,9 +493,11 @@ To meet the criteria of our MVP the design incorporates three menu, these are di
 
 ### Trello Board & Project Management
 
-The Trello board can be found here: [Desperate Housewives Trello](https://trello.com/invite/b/BzgS0oZt/641fd4be604d47fca55fb75d6d5855c0/team-project)
+Trello Board: [link](https://trello.com/invite/b/BzgS0oZt/641fd4be604d47fca55fb75d6d5855c0/team-project)
 
-For our project we have decided to use a implement kanban board with regular meetings and standups. This Kanban board is designed to be used to management the project by following the below steps. 
+For our project we decided to allocate tasks based on the teams strengths. This lead to Gisele primarily working in the backend, Nik on both ends and Ben on the front end. In addition to this we all attended daily stand up (excl weekends) where we discussed what we were working on and the cards we would be trying to finish. Once assigned a card in our daily standup we would write  our checklist fo that card and input a dude date to track our progress.In addition to this you will notice that we limited our scope significantly so we could prioritize our MVP product. The difficulty levels on each card was also displayed on our Trello Board using labels. To see our daily progress look at our Trello Board where we logged daily screenshots of our Trello Board, our minutes and our stand ups. 
+
+For our project we have decided to use a implement kanban style Trello board with regular meetings and standups. This Kanban board is designed to be used to management the project by following the below steps. 
 
 1. Make User Stories and other project related tasks visible on the board by adding all tasks as cards to the **Backlog** list;
 
@@ -539,6 +541,11 @@ Below is a series of screenshots with the progress that we have achieved thus fa
 
 ![Trello 04/07/2022 1](./docs/Trello22022-07-08.png)
 ![Trello 04/07/2022 2](./docs/Trello2022-07-08.png)
+
+Lastly, for source control the team made use of git and git branches to organize the development of features for the app. A copy of our git-log can be found here: [commits](https://github.com/desperate-housewares/dh-backend/commits/main)
+### Testing Reference:
+
+We did snapshot testing for some components on the frontend and unit testing and integration testing for components on the backed. In addition to this we also did user flow manual tests. The user flow tests can be found here: [userFlowTests](https://docs.google.com/spreadsheets/d/1cAdR8FZKEPNZPPeULztCVAeeWFnUP69NutmQy8QTe40/edit?usp=sharing)
 
 ### References
 
