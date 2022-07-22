@@ -10,6 +10,7 @@
 2. [Backend API](https://github.com/desperate-housewares/dh-backend.git)
 
 ### Table of Contents
+1. [Installation](#installation)
 1. [Problem Identified](#problem-identified)
 2. [Purpose](#purpose)
 3. [Target Audience](#target-audience)
@@ -28,6 +29,30 @@
    5. [Menus Design](#menus-design)
 10. [Trello Board & Project Management](#trello-board--project-management)
 11. [References](#references)
+
+### Installation
+#### [Frontend](https://github.com/desperate-housewares/dh-frontend-cra.git)
+1. Open the terminal
+2. CD into the dh-frontend-cra directory after cloning it as above. 
+3. Type into the terminal 'npm install' and wait for it to complete the installation.
+4. Type into the terminal 'npm start' to start the application on your local machine.
+
+Note: If you run into files not found when you have started the server but the components are present make sure that the directory name for the component matches the import statement. This should not effect your build if you deploy the website online using a platform such as netlify.
+
+#### [Backend](https://github.com/desperate-housewares/dh-backend.git)
+1. Open the terminal
+2. CD into the dh-frontend-cra directory after cloning it as above. 
+3. Type into the terminal 'npm install' and wait for it to complete the installation.
+4. Type into the terminal 'npm run dev' to start the application on your local machine.
+
+### Create an Admin Account
+To create an admin account, it will need to be done manually in the database. This is so that it's not possible to create a admin account in the browser. 
+
+1. Open [MongoDB](https://www.mongodb.com/) and navigate to your database.
+2. Locate the user you wish to grant admin access to.
+3. Change the role of the user from `role: "customer"` to `role: "admin"`
+
+Note: If you run into files not found when you have started the server but the components are present make sure that the directory name for the component matches the import statement. This should not effect your build if you deploy the website online using a platform such as netlify.
 
 ### Problem Identified
 
