@@ -6,8 +6,8 @@
 ### Team Members: Benjamin Stuart, Gisele Lima, Nikolaos Makrakis
 
 ### GitHub Repositories & corresponding readmes: 
-1. [Frontend React App](https://github.com/desperate-housewares/dh-frontend-cra.git)
-2. [Backend API](https://github.com/desperate-housewares/dh-backend.git)
+1. [Frontend React App](https://github.com/nik-mak/T3A2-B-Frontend)
+2. [Backend API](https://github.com/nik-mak/T3A2-B-Backend)
 
 ### Table of Contents
 1. [Installation](#installation)
